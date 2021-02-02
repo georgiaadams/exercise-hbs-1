@@ -46,16 +46,13 @@ app.get("/example", (req, res, next) => {
 // EXERCISE !
 app.get('/user', (req, res, next) => {
   const data = {
-    firstName: 'YOUR NAME',
-    lastName: 'YOUR LAST NAME',
+    firstName: 'GEORGIA',
+    lastName: 'ADAMS',
     image: "https://i.imgur.com/X7nm0R5.png",
     techStack: ['html', 'css', 'js', 'node', 'express']
   }
-
-
-  // Your Code here... 
-  // Render the user view and inject the data from above object 
-  // and display it in the page
+  
+  res.render("user", data);
 })
 
 

@@ -11,8 +11,8 @@
   <body>
     <nav>
       <div>
-        <img src="https://i.imgur.com/RP5vFgT.png" alt="" />
-        <p>User's name</p>
+        <img src={{image}} alt="" />
+        <p>{{firstName}} {{lastName}}</p>
       </div>
       <ul>
         <li><a href="">Home</a></li>
@@ -23,6 +23,11 @@
 
     <main>
       <h1 style="color: skyblue">Tech Stack:</h1>
+      <ul>
+        {{#each techStack}} 
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
 
     </main>
   </body>
